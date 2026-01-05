@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        /* إعدادات الخطوط والألوان العامة */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* الهيدر (الجزء العلوي احمر) */
+        header {
+            background-color: #1a73e8;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* الحاوية الرئيسية للكروت */
+        .container {
+            max-width: 800px;
+            margin: -30px auto 40px auto; /* لرفع الكروت قليلاً فوق الهيدر */
+            padding: 0 20px;
+        }
+
+        /* تنسيق الكارت */
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* العناوين داخل الكروت مع الخط الاحمر الجانبي */
+        .card-title {
+            color: #1a73e8;
+            border-right: 5px solid #1a73e8;
+            padding-right: 15px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .info-row {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .info-row span {
+            font-weight: bold;
+        }
+
+        /* تنسيق قسم المهارات (Progress Bars) */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .skill-item {
+            margin-bottom: 15px;
+        }
+
+        .skill-name {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .progress-bar {
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            height: 10px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            background-color: #1a73e8;
+            height: 100%;
+        }
+
+        /* تذييل الصفحة (الفوتر) */
+        footer {
+            background-color: #1557b0;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 14px;
+        }
+
+        /* استجابة الشاشات الصغيرة */
+        @media (max-width: 600px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>بسمه محمد كمال</h1>
+        <p>كلية التربية النوعية - قسم تكنولوجيا التعليم</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="card">
+            <div class="card-title">البيانات الشخصية</div>
+            <div class="info-row"><span>الاسم:</span> بسمه محمد كمال</div>
+            <div class="info-row"><span>الكلية:</span> كلية تربية نوعية</div>
+            <div class="info-row"><span>القسم:</span> تكنولوجيا التعليم</div>
+        </section>
+
+        <section class="card">
+            <div class="card-title">نبذة عني</div>
+            <p>طالبه في كلية تكنولوجيا التعليم متخصصه في توظيف الوسائط المتعدده والتقنيات الحديثه لخدمة الاهداف التربوية اركز في دراستي علي تصميم النظم التعليمية ادارة المنصات وانتاج الوسائل البصرية التي تسهل عملية نقل المعرفة.</p>
+        </section>
+
+        <section class="card">
+            <div class="card-title">المهارات</div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <span class="skill-name">استخدام الحاسب الآلي</span>
+
+<div class="progress-bar"><div class="progress-fill" style="width: 70%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Microsoft Office</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 65%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">تصميم العروض التعليمية</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">HTML أساسيات</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 50%;"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="card-title">الأهداف</div>
+            <p>تصميم بيئات تعلم تفاعلية السعي لاانشاءفصول افتراضية ومنصات رقميه تجعل الطالب هو محور العمليه التعليمية.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        © 2026 | بسمه محمد كمال
+    </footer>
+
+</body>
+</html>
